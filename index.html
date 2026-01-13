@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talisma-Hospitality Sector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="images/logo white.png" alt="" width="200" />
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <a href="">Solutions</a>
+          <a href="#">Platform</a>
+          <a href="#">Resources</a>
+          <a href="#">About</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <button class="cta-btn desktop-only">
+          <a
+            href="https://outlook.office.com/book/TalismaCX@talisma.com/?ismsaljsauthenabled"
+            >Book Appointment</a
+          >
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" onclick="toggleMenu()">
+          <span id="menu-icon">☰</span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="nav-mobile" id="mobileMenu">
+        <a href="#">Solutions</a>
+        <a href="#">Platform</a>
+        <a href="#">Resources</a>
+        <a href="#">About</a>
+        <button class="cta-btn mobile-cta">
+          <a
+            href="https://outlook.office.com/book/TalismaCX@talisma.com/?ismsaljsauthenabled"
+            >Book Appointment</a
+          >
+        </button>
+      </nav>
+    </header>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const icon = document.getElementById("menu-icon");
+
+        menu.classList.toggle("open");
+        icon.textContent = menu.classList.contains("open") ? "✕" : "☰";
+      }
+    </script>
+
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-grid">
+          <!-- LEFT CONTENT -->
+          <div class="hero-content">
+            <!-- Heading -->
+            <div class="hero-text">
+              <!-- <div class="badge">🎓 Higher Education – US.</div> -->
+              <h1><span>AI-For</span></h1>
+
+              <h2>Hospitality</h2>
+              <p>
+                Enable hospitality organizations to strengthen Data Protection
+                compliance, gain Guest 360 view, and improve operational
+                efficiency using AI-powered engagement platforms.
+              </p>
+            </div>
+
+            <!-- Features -->
+            <div class="hero-features">
+              <div>
+                <span className="text-purple-400">></span>
+                <span>Increase Student Admission</span>
+              </div>
+              <div>
+                <span className="text-purple-400">></span>
+                <span>Improve Student Engagement</span>
+              </div>
+              <div>
+                <span className="text-purple-400">></span>
+                <span>Measure and Track Outcome</span>
+              </div>
+              <div>
+                <span className="text-purple-400">></span>
+                <span>Skill Mapping For Career Readiness</span>
+              </div>
+            </div>
+            <!-- Email Input -->
+            <div class="hero-form">
+              <!-- <input
+                type="email"
+                id="email"
+                placeholder="Enter email to book a walkthrough"
+              /> -->
+              <button class="cta-btn">
+                <a
+                  href="https://outlook.office.com/book/TalismaUS@talisma.com/?ismsaljsauthenabled"
+                  >Book Appointment</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="hero-image-wrapper">
+            <div class="image-border">
+              <img src="images/32914.jpg" alt="Professional educator" />
+            </div>
+
+            <!-- Stats Badge -->
+            <!-- <div class="stats-badge">
+              <strong>94.8%</strong>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- challenges section -->
+    <section class="challenges">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+          <h2>Powering <span>Modern Hospitality</span></h2>
+          <p>
+            Balance personalization with data protection in a high-expectation,
+            high-risk environment. Talisma enables hospitality organizations to
+            deliver exceptional guest experiences while staying DPDP-compliant.
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+          <!-- Card 01 -->
+          <div class="card">
+            <div class="card-content">
+              <div class="icon-box purple">🛡️</div>
+
+              <div class="card-text">
+                <div class="card-header">
+                  <div>
+                    <h3>DPDP Compliance for Hospitality</h3>
+                    <p class="description">
+                      Hotels collect large volumes of sensitive guest
+                      data—identity documents, contact details, payment
+                      information, preferences. The DPDP Act mandates explicit
+                      consent, masking of PII, controlled access, and breach
+                      readiness.
+                    </p>
+                  </div>
+                  <span class="number">01</span>
+                </div>
+
+                <p class="details">
+                  Talisma automates DPDP compliance through AI-powered data
+                  masking, role-based access control, consent governance, audit
+                  tracking, and secure data workflows—helping hospitality brands
+                  stay compliant without disrupting guest experience.
+                </p>
+
+                <p class="personas">
+                  <strong>Buyer Personas:</strong> CIO, CISO, COO
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 02 -->
+          <div class="card">
+            <div class="card-content">
+              <div class="icon-box blue">👥</div>
+
+              <div class="card-text">
+                <div class="card-header">
+                  <div>
+                    <h3>Guest 360 Intelligence</h3>
+                    <p class="description">
+                      Fragmented guest data across PMS, booking engines, loyalty
+                      platforms, and service systems prevents consistent
+                      personalization and timely service.
+                    </p>
+                  </div>
+                  <span class="number">02</span>
+                </div>
+
+                <p class="details">
+                  Talisma unifies guest data into a single, intelligent view,
+                  enabling teams to understand preferences, sentiment, stay
+                  history, and engagement patterns across touchpoints.
+                </p>
+
+                <p class="personas">
+                  <strong>Buyer Personas:</strong> VP Guest Experience, VP
+                  Sales, COO, Head of Loyalty
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 03 -->
+          <div class="card">
+            <div class="card-content">
+              <div class="icon-box teal">✨</div>
+
+              <div class="card-text">
+                <div class="card-header">
+                  <div>
+                    <h3>AI-Powered Service & Operational Efficiency</h3>
+                    <p class="description">
+                      Hospitality service teams face high inquiry volumes,
+                      staffing challenges, and the need for consistent service
+                      quality across properties and channels.
+                    </p>
+                  </div>
+                  <span class="number">03</span>
+                </div>
+
+                <p class="details">
+                  Talisma deploys AI-powered assistants and automation tools
+                  including Email Assist, Voice Assist, Chatbots, and Voice Bots
+                  for instant guest responses and call deflection.
+                </p>
+
+                <p class="personas">
+                  <strong>Buyer Personas:</strong> VP Guest Services, CTO, COO
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section -->
+    <section class="features">
+      <div class="features-container">
+        <!-- Header -->
+        <div class="features-header">
+          <h2>Business <span>Outcomes</span></h2>
+          <p>
+            Measurable impact across guest experience, operational efficiency,
+            and revenue growth—all while maintaining strict compliance with
+            India's data protection regulations.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="icon purple">🛡️</div>
+            <h3>Improved Guest Trust</h3>
+            <p>
+              Build confidence through compliant data handling and transparent
+              privacy practices that meet DPDP Act requirements.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="icon pink">❤️</div>
+            <h3>Higher Guest Satisfaction</h3>
+            <p>
+              Deliver personalized experiences across all touchpoints using
+              unified guest intelligence and preferences.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="icon blue">📉</div>
+            <h3>Reduced Operational Costs</h3>
+            <p>
+              Automate routine inquiries and service tasks with AI-powered
+              assistants, freeing up staff for high-value interactions.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="icon teal">⚡</div>
+            <h3>Faster Response Times</h3>
+            <p>
+              Provide instant responses through AI chatbots and voice bots while
+              supporting agents with real-time guidance.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card">
+            <div class="icon orange">🔁</div>
+            <h3>Increased Repeat Bookings</h3>
+            <p>
+              Drive loyalty through personalized engagement, proactive service
+              recovery, and seamless multi-channel experiences.
+            </p>
+          </div>
+
+          <!-- Summary Card -->
+          <div class="feature-card highlight">
+            <h3>Ready to Transform?</h3>
+            <p>
+              Join leading hospitality brands leveraging Talisma to deliver
+              exceptional guest experiences while staying compliant.
+            </p>
+            <button>View Case Studies</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- transform section -->
+    <section class="transform">
+      <div class="transform-container">
+        <!-- Header -->
+        <div class="transform-header">
+          <h2>Ready to <span>Transform</span> Guest Experiences</h2>
+        </div>
+
+        <!-- Benefits -->
+        <div class="transform-grid">
+          <!-- Item 1 -->
+          <div class="transform-item">
+            <div class="check-icon">✓</div>
+            <div class="content">
+              <h3>Seamless Integration</h3>
+              <p>
+                Talisma integrates with your existing PMS, booking engines, and
+                service platforms without disrupting guest operations, ensuring
+                you see value from day one.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="transform-item">
+            <div class="check-icon">✓</div>
+            <div class="content">
+              <h3>Proven in Hospitality</h3>
+              <p>
+                Our AI-powered platforms have helped hotels and resorts across
+                India improve guest satisfaction, reduce service costs, and
+                maintain DPDP compliance with measurable results.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="transform-item">
+            <div class="check-icon">✓</div>
+            <div class="content">
+              <h3>Pilot Programs Available</h3>
+              <p>
+                Not ready for full deployment? Start with a pilot program to
+                test the impact on guest experience and compliance before
+                scaling across your properties.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="cta-container">
+        <div class="cta-content">
+          <!-- Text -->
+          <div class="cta-text">
+            <h2>
+              Is your hospitality brand ready to balance personalization with
+              data protection?
+            </h2>
+            <p>
+              Discover how Talisma helps you deliver exceptional guest
+              experiences while staying DPDP-compliant.
+            </p>
+          </div>
+
+          <!-- Button -->
+          <button class="cta-button">Speak with Our Team</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="faq-container">
+        <h2 class="faq-title">FAQs</h2>
+
+        <div class="faq-list">
+          <!-- FAQ ITEM -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >What is DPDP compliance and why does it matter for
+                hospitality?</span
+              >
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              India's DPDP Act mandates strict protection of personal data
+              including guest identity documents, payment info, and preferences.
+              Non-compliance can result in significant penalties. Talisma
+              automates compliance through data masking, consent governance, and
+              audit tracking.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does Talisma create a Guest 360 view?</span>
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Talisma unifies data from your PMS, booking engines, loyalty
+              platforms, and service systems into a single intelligent view.
+              This enables personalized service, sentiment tracking, and
+              insights across all guest touchpoints.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >Can Talisma integrate with our existing hotel systems?</span
+              >
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Yes, Talisma seamlessly integrates with your existing
+              infrastructure including PMS, booking engines, and service
+              platforms without disrupting operations or guest experience.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What AI-powered tools does Talisma provide?</span>
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Talisma includes Email Assist for summarization and response
+              generation, Voice Assist for real-time agent guidance, and
+              Chatbots/Voice Bots for instant guest responses and call
+              deflection.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >Is Talisma suitable for hotel chains with multiple
+                properties?</span
+              >
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Absolutely. Talisma scales to support single properties or large
+              hotel chains, ensuring consistent service quality and compliance
+              across all locations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const questions = document.querySelectorAll(".faq-question");
+
+      questions.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          const isOpen = item.classList.contains("open");
+
+          document.querySelectorAll(".faq-item").forEach((i) => {
+            i.classList.remove("open");
+          });
+
+          if (!isOpen) {
+            item.classList.add("open");
+          }
+        });
+      });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- TOP GRID -->
+        <div class="footer-grid">
+          <!-- BRAND -->
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <img src="images/logo white.png" alt="" />
+            </div>
+            <p>
+              Empowering educational institutions with AI-driven solutions to
+              enhance student success and streamline operations.
+            </p>
+          </div>
+
+          <!-- SOLUTIONS -->
+          <div class="footer-col">
+            <h3>Solutions</h3>
+            <ul>
+              <li><a href="#">AI Admissions</a></li>
+              <li><a href="#">Intelligent LMS</a></li>
+              <li><a href="#">Analytics Platform</a></li>
+            </ul>
+          </div>
+
+          <!-- PLATFORM -->
+          <div class="footer-col">
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integration</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+
+          <!-- CONNECT -->
+          <div class="footer-col">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom">
+          <p>© 2026 Talisma Solutions, LLC. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
