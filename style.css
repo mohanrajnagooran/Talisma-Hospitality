@@ -309,6 +309,19 @@
   
 }
 
+@media (max-width: 767px) {
+  .hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-border {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 
 /* CHALLENGES */
 /* Section */
